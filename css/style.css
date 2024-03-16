@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.navbar {
+  background-color: #aeaeae;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 94px;
+}
+
+.header-logo {
+  padding: 25px 50px;
+}
+
+.header-nav {
+  display: flex;
+  flex-basis: 100%;
+  list-style: none;
+  padding: 0 50px;
+  margin: 0;
+}
+
+.header-nav-link {
+  font-size: 16px;
+  text-decoration: none;
+  /*margin-right: 50px;*/
+  margin-right: 39px;
+  /*Фикс переносов, в макете указан отступ в 50px, но с ним текст начинает переноситься на другую строку*/
+  color: inherit;
+}
+
+.header-phone {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  /*Чтобы не сжимался*/
+  gap: 10px;
+  /*Отступ между иконкой и номером*/
+}
+
+.header-phone-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: inherit;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 10px;
+  background-color: #3a71d1;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  padding: 25px 60px;
+}
+
+.header-button {
+  height: 100%;
+}
