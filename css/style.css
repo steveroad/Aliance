@@ -6,6 +6,18 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+.--p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.--bold {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.6px;
+}
+
 .navbar {
   background-color: #aeaeae;
   display: flex;
@@ -31,7 +43,6 @@ body {
 }
 
 .header-nav-link {
-  font-size: 16px;
   text-decoration: none;
   color: inherit;
 }
@@ -48,7 +59,6 @@ body {
 
 .header-phone-link {
   text-decoration: none;
-  font-size: 16px;
   color: inherit;
 }
 
@@ -61,9 +71,6 @@ body {
   background-color: #3a71d1;
   color: #fff;
   border: none;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 160%;
   padding: 25px 60px;
 }
 
