@@ -26,12 +26,13 @@ body {
   margin: 0;
 }
 
+.header-nav-item {
+  margin-right: 50px;
+}
+
 .header-nav-link {
   font-size: 16px;
   text-decoration: none;
-  /*margin-right: 50px;*/
-  margin-right: 39px;
-  /*Фикс переносов, в макете указан отступ в 50px, но с ним текст начинает переноситься на другую строку*/
   color: inherit;
 }
 
