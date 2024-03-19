@@ -26,6 +26,22 @@ body {
   line-height: 25.6px;
 }
 
+.--h2 {
+  font-family: "Bebas Neue Regular";
+  max-width: 700px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+  color: #292D33;
+}
+
+.--h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 44.8px;
+  color: #292D33;
+}
+
 .container {
   max-width: 1440px;
   margin: auto;
@@ -60,6 +76,7 @@ body {
   color: #fff;
   height: 94px;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  width: 100%;
 }
 
 .header-logo {
@@ -157,4 +174,67 @@ body {
 
 .header-features-item:not(:last-child) {
   border-right: none;
+}
+
+.section-light {
+  margin: 150px 0px 150px 0px;
+}
+
+.section-title {
+  margin: 30px 0px 50px 0px;
+}
+
+.steps {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
+
+.steps-item {
+  max-width: 330px;
+}
+
+.steps-num {
+  display: flex;
+  align-items: center;
+  font-family: "Bebas Neue Regular";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57.6px;
+  color: #5C8EE5;
+}
+
+.steps-num::after {
+  content: "";
+  display: block;
+  width: 260px;
+  height: 1px;
+  background-color: #EBEBF0;
+  margin-left: 30px;
+}
+
+.steps-title {
+  margin: 30px 0px 10px 0px;
+}
+
+.steps-text {
+  color: #828A99;
+  margin: 0px 0px 20px 0px;
+}
+
+.steps-link {
+  display: flex;
+  align-items: center;
+  color: #5C8EE5;
+  text-decoration: none;
+}
+
+.steps-link::before {
+  content: "";
+  display: inline-block;
+  margin-right: 20px;
+  width: 40px;
+  height: 1px;
+  background-color: #5C8EE5;
 }
