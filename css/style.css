@@ -93,25 +93,25 @@ body {
   height: 4.625rem;
 }
 
-.header-logo {
+.navbar-logo {
   padding: 1.5625rem 3.125rem;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
   transition: padding 0.5s;
 }
 
-.header-logo .logo-svg {
+.navbar-logo .logo-svg {
   width: 8.75rem;
   height: 2.75rem;
 }
 
 /*light*/
-.header-logo-light {
+.navbar-logo-light {
   padding: .9375rem 3.125rem;
   border-right: 1px solid rgb(235, 235, 240);
 }
 
-.header-nav {
+.navbar-nav {
   display: flex;
   flex-basis: 100%;
   list-style: none;
@@ -120,16 +120,16 @@ body {
   margin: 0;
 }
 
-.header-nav-item:not(last-child) {
+.navbar-nav-item:not(:last-child) {
   margin-right: 3.125rem;
 }
 
-.header-nav-link {
+.navbar-nav-link {
   text-decoration: none;
   color: inherit;
 }
 
-.header-phone {
+.navbar-phone {
   margin-right: 3.125rem;
   display: flex;
   align-items: center;
@@ -139,7 +139,12 @@ body {
   /*Отступ между иконкой и номером*/
 }
 
-.header-phone-link {
+.navbar-phone .logo-svg {
+  width: 1rem;
+  height: 1.0625rem;
+}
+
+.navbar-phone-link {
   text-decoration: none;
   color: inherit;
 }
@@ -215,6 +220,31 @@ body {
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
+.header-features-item .logo-svg-1 {
+  width: 1.3125rem;
+  height: 1.75rem;
+}
+
+.header-features-item .logo-svg-2 {
+  width: 1.8125rem;
+  height: 1.8125rem;
+}
+
+.header-features-item .logo-svg-3 {
+  width: 1.5625rem;
+  height: 1.75rem;
+}
+
+.header-features-item .logo-svg-4 {
+  width: 2.1875rem;
+  height: 1.5625rem;
+}
+
+.header-features-item .logo-svg-5 {
+  width: 2rem;
+  height: 1.5625rem;
+}
+
 .header-features-item:not(:last-child) {
   border-right: none;
 }
@@ -284,7 +314,7 @@ body {
 
 @media (min-width:1400px) and (max-width: 1720px) {
   * {
-    font-size: 12.9px;
+    font-size: 13px;
   }
 
   .header-title {
@@ -294,7 +324,7 @@ body {
 
 @media (min-width:1200px) and (max-width: 1399px) {
   * {
-    font-size: 11.1px;
+    font-size: 11px;
   }
 
   .header-title {
@@ -304,7 +334,7 @@ body {
 
 @media (min-width:992px) and (max-width: 1199px) {
   * {
-    font-size: 9.1px;
+    font-size: 9.4px;
   }
 
   .header-title {
