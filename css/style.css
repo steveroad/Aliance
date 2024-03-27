@@ -47,6 +47,10 @@ body {
   margin: auto;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .header {
   min-height: 100vh;
   padding: 0;
@@ -142,6 +146,11 @@ body {
 .navbar-phone .logo-svg {
   width: 1rem;
   height: 1.0625rem;
+  fill: #5C8EE6;
+}
+
+.button-icon {
+  display: none;
 }
 
 .navbar-phone-link {
@@ -216,7 +225,7 @@ body {
 
 .header-features-item {
   padding: 1.875rem 3.125rem;
-  min-width: 18rem;
+  width: 18rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -265,7 +274,7 @@ body {
 }
 
 .steps-item {
-  max-width: 20.625rem;
+  width: 20.625rem;
 }
 
 .steps-num {
@@ -281,7 +290,7 @@ body {
 .steps-num::after {
   content: "";
   display: block;
-  width: 16.25rem;
+  width: 100%;
   height: .0625rem;
   background-color: #EBEBF0;
   margin-left: 1.875rem;
@@ -336,7 +345,7 @@ body {
   }
 
   .navbar-logo {
-    padding: 2rem;
+    padding: 1.875rem;
   }
 
   .navbar-logo .logo-svg {
@@ -365,6 +374,14 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .container {
+    max-width: 70rem;
+  }
+
+  .navbar-logo {
+    padding: 1rem;
+  }
+
   .navbar {
     height: 5rem;
   }
@@ -382,7 +399,179 @@ body {
     padding-right: 2rem;
     height: 5rem;
   }
+}
 
+@media (max-width: 992px) {
+  * {
+    font-size: 12px;
+  }
+
+  .container {
+    max-width: 60rem;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-logo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .mobile-menu-toggle {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.6875rem 1.875rem;
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+  }
+
+  .mobile-menu-line {
+    height: 2px;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .navbar-light .mobile-menu-toggle {
+    border-right: 1px solid rgb(235, 235, 240);
+  }
+
+  .navbar-light .mobile-menu-line {
+    background-color: #333;
+    border-right: 1px solid rgb(235, 235, 240);
+  }
+
+  .mobile-menu-line:nth-child(2) {
+    width: 80%;
+  }
+
+  .navbar-button .button-text {
+    display: none;
+  }
+
+  .button-icon {
+    display: block;
+    width: 1rem;
+    height: 1.0625rem;
+    fill: #fff;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 2;
+    background-color: #fff;
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 15px;
+  }
+
+  .mobile-menu.is-open {
+    display: block;
+  }
+
+  .--bold_mob {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22.4px;
+    color: #292D33;
+  }
+
+  .--p_mob {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.4px;
+    color: #828A99;
+  }
+
+  .mobile-menu-nav {
+    list-style: none;
+    padding: 0;
+  }
+
+  .mobile-menu-item {
+    margin-bottom: 1.875rem;
+  }
+
+  .mobile-menu-link {
+    text-decoration: none;
+  }
+
+  .mobile-submenu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 35px;
+  }
+
+  .mobile-submenu-item {
+    margin-bottom: 10px;
+  }
+
+  .mobile-submenu-link {
+    text-decoration: none;
+  }
+
+  .mobile-phone {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #292D33;
+    text-decoration: underline;
+    border-top: 1px solid #EBEBF0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .mobile-info {
+    margin-top: 1.3125rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 10px;
+  }
+
+  .mobile-info .mobi-svg-1 {
+    width: 12px;
+    height: 17px;
+  }
+
+  .mobile-info-address {
+    color: #292D33;
+    font-style: normal;
+  }
+
+  .mobile-info .mobi-svg-2 {
+    width: 16px;
+    height: 12px;
+  }
+
+  .mobile-info-mail {
+    text-decoration: none;
+    color: #292D33;
+  }
+
+  .mobile-info .mobi-svg-3 {
+    width: 20px;
+    height: 12px;
+  }
+
+  .mobile-info .mobi-svg-4 {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 /*

@@ -2,6 +2,9 @@ const navbar = document.querySelector(".navbar");
 const navbarlogo = document.querySelector(".navbar-logo");
 const logo = document.querySelector(".logo-svg use");
 const navbarbutton = document.querySelector(".navbar-button");
+
+const mMenuToogle = document.querySelector(".mobile-menu-toggle");
+const menu = document.querySelector(".mobile-menu");
 window.addEventListener("scroll", () => {
   if (this.scrollY > 1) {
     navbar.classList.add("navbar-light");
@@ -14,4 +17,9 @@ window.addEventListener("scroll", () => {
     logo.href.baseVal = "img/sprite.svg#logo_light";
     navbarbutton.classList.remove("navbar-button-light");
   }
+});
+
+mMenuToogle.addEventListener("click", (event) => {
+  event.preventDefault();
+  menu.classList.toggle("is-open");
 });
