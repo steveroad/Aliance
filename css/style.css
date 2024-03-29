@@ -587,6 +587,37 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 40rem;
+  }
+
+  .header-title {
+    color: greenyellow;
+    font-size: 4rem;
+  }
+
+  .header-content {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .header-title {
+    color: greenyellow;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .header-content {
+    padding-top: 2rem;
+  }
+}
+
 /*
 @media (min-width:1400px) and (max-width: 1720px) {
   * {
