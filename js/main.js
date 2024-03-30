@@ -54,3 +54,64 @@ mMenuToogle.addEventListener("click", (event) => {
     openMenu();
   }
 });
+//1//
+const swiper1 = new Swiper(".swiper1", {
+  speed: 400,
+  autoHeight: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".slider-button-next",
+    prevEl: ".slider-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 576px
+    576: {
+      slidesPerView: 2,
+      centeredSlides: true,
+      slidesOffsetBefore: -100,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 4,
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+//2//
+const swiper2 = new Swiper(".swiper2", {
+  speed: 400,
+  autoHeight: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".steps-button-next",
+    prevEl: ".steps-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 576px
+    576: {
+      slidesPerView: 2,
+      centeredSlides: true,
+      slidesOffsetBefore: -100,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 4,
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
