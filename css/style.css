@@ -213,9 +213,8 @@ body {
 
 .header-features {
   display: flex;
-  max-height: 10.5rem;
+  min-height: 10.5rem;
   padding: 0;
-  margin: 0;
   margin-top: 6.25rem;
   color: #fff;
   list-style: none;
@@ -227,8 +226,8 @@ body {
 }
 
 .header-features-item {
-  padding: 1.875rem 3.125rem;
-  min-height: 100%;
+  padding: 1.75rem 3.125rem;
+  height: auto;
   width: 18rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
@@ -257,6 +256,8 @@ body {
   width: 2rem;
   height: 1.5625rem;
 }
+
+.header-features-text {}
 
 /*.header-features-item:not(:last-child) {
   border-right: none;
