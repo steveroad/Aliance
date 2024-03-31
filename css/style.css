@@ -108,6 +108,10 @@ body {
   height: 2.75rem;
 }
 
+.logo-svg_dark {
+  display: none;
+}
+
 /*light*/
 .navbar-logo-light {
   padding: .9375rem 3.125rem;
@@ -254,9 +258,9 @@ body {
   height: 1.5625rem;
 }
 
-.header-features-item:not(:last-child) {
+/*.header-features-item:not(:last-child) {
   border-right: none;
-}
+}*/
 
 .slider-buttons {
   display: none;
