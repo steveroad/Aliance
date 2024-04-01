@@ -104,8 +104,6 @@ const swiper2 = new Swiper(".swiper2", {
     // when window width is >= 576px
     576: {
       slidesPerView: 2,
-      centeredSlides: true,
-      slidesOffsetBefore: -100,
     },
     // when window width is >= 768px
     768: {
@@ -113,10 +111,6 @@ const swiper2 = new Swiper(".swiper2", {
     },
     // when window width is >= 1024px
     1024: {
-      slidesPerView: 4,
-    },
-    // when window width is >= 1200px
-    1200: {
       slidesPerView: 4,
     },
   },

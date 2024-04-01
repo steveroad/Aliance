@@ -343,15 +343,14 @@ body {
 .steps-buttons {
   display: none;
   height: 40px;
-  width: 120px;
-  background-color: #5C8EE5;
-  margin-left: auto;
+  justify-content: flex-end;
 }
 
 .steps-button-prev,
 .steps-button-next {
+  background-color: #5C8EE5;
   height: 100%;
-  flex-basis: 50%;
+  width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
