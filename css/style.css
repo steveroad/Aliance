@@ -120,6 +120,8 @@ body {
 
 .navbar-nav {
   display: flex;
+  align-items: center;
+  height: 100%;
   flex-basis: 100%;
   list-style: none;
   padding: 0;
@@ -127,13 +129,38 @@ body {
   margin: 0;
 }
 
+.navbar-nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .navbar-nav-item:not(:last-child) {
   margin-right: 3.125rem;
 }
 
 .navbar-nav-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
   text-decoration: none;
   color: inherit;
+  position: relative;
+}
+
+.navbar-nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #5C8EE5;
+  bottom: -1px;
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+
+.navbar-nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 .navbar-phone {
@@ -338,6 +365,11 @@ body {
   width: 2.5rem;
   height: .0625rem;
   background-color: #5C8EE5;
+  transition: width 0.2s;
+}
+
+.steps-link:hover::before {
+  width: 3.75rem;
 }
 
 .steps-buttons {
@@ -357,6 +389,96 @@ body {
   cursor: pointer;
 }
 
+.production {
+  margin-bottom: 9.375rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-decoration: none;
+  position: relative;
+  flex-basis: 33%;
+  border: 1px solid #EBEBF0;
+  transition: border 0.2s;
+}
+
+.card:hover {
+  border: 1px solid #5C8EE5;
+}
+
+.card:hover .card-title {
+  color: #5C8EE5;
+}
+
+.card-content {
+  padding: 2.5rem 3.125rem;
+}
+
+.card-title {
+  color: #292D33;
+  margin-top: 0;
+  margin-bottom: .625rem;
+  transition: color 0.2s;
+}
+
+.card-text {
+  color: #828A99;
+  margin-bottom: 24.375rem;
+}
+
+.card-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.stamps-pages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stamps-page {
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
+  border: 1px solid #EBEBF0;
+}
+
+.stamps-page-image {
+  max-width: 100%;
+  padding: 3.125rem;
+}
+
+.ag_tech {
+  width: 8.75rem;
+  height: 7.5625rem;
+}
+
+.al_p {
+  width: 6.4375rem;
+  height: 8.75rem;
+}
+
+.stamps-page-cont {
+  width: 24.375rem;
+  padding-right: 3.125rem;
+}
+
+.stamps-page-cont-title {
+  color: #292D33;
+}
+
+.stamps-page-cont-text {
+  color: #828A99;
+}
+
 @media (max-width: 1700px) {
   * {
     font-size: 14px;
@@ -373,6 +495,7 @@ body {
   .header-title {
     color: red;
   }
+
 }
 
 @media (max-width: 1460px) {
@@ -438,6 +561,14 @@ body {
 
   .slider-buttons {
     display: flex;
+  }
+
+  .card {
+    flex-basis: 50%;
+  }
+
+  .stamps-page {
+    flex-basis: 100%;
   }
 
 }
@@ -644,6 +775,18 @@ body {
 
   .header-content {
     padding-top: 3rem;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+
+  .stamps-page {
+    flex-direction: column;
+  }
+
+  .stamps-page-cont {
+    padding: 0;
   }
 }
 
