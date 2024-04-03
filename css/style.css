@@ -444,44 +444,65 @@ body {
   z-index: 0;
 }
 
-.stamps-pages {
+.trademark-cards {
   display: flex;
-  flex-wrap: wrap;
 }
 
-.stamps-page {
-  display: flex;
-  align-items: center;
+.trademark-card {
   flex-basis: 50%;
+  text-decoration: none;
   border: 1px solid #EBEBF0;
+  transition: border 0.2s;
+  padding: 3.125rem;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-column-gap: 3.125rem;
+  grid-template-areas:
+    "logo title title"
+    "logo text text";
 }
 
-.stamps-page-image {
-  max-width: 100%;
-  padding: 3.125rem;
+.trademark-card:hover {
+  border: 1px solid #5C8EE5;
+}
+
+.trademark-card-logo {
+  grid-area: logo;
+  fill: #828A99;
+  transition: fill 0.2s;
+}
+
+.trademark-card:hover .trademark-card-logo {
+  fill: #5C8EE6;
+}
+
+.trademark-card:hover .trademark-card-title {
+  color: #5C8EE6;
 }
 
 .ag_tech {
-  width: 8.75rem;
-  height: 7.5625rem;
+  width: 11.25rem;
+  height: 11.25rem;
 }
 
 .al_p {
-  width: 6.4375rem;
-  height: 8.75rem;
+  width: 11.25rem;
+  height: 11.25rem;
 }
 
-.stamps-page-cont {
-  width: 24.375rem;
-  padding-right: 3.125rem;
-}
-
-.stamps-page-cont-title {
+.trademark-card-title {
   color: #292D33;
+  grid-area: title;
+  margin: 0;
+  transition: color 0.2s;
 }
 
-.stamps-page-cont-text {
+.trademark-card-text {
   color: #828A99;
+  grid-area: text;
+  margin: 0;
+  margin-top: .625rem;
 }
 
 @media (max-width: 1700px) {
@@ -572,10 +593,17 @@ body {
     flex-basis: 50%;
   }
 
-  .stamps-page {
-    flex-basis: 100%;
+  .trademark-card {
+    grid-template-areas:
+      "logo title"
+      "text text";
+    grid-column-gap: 0;
   }
 
+  .trademark-card-logo {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -781,6 +809,10 @@ body {
   .steps-buttons {
     display: flex;
   }
+
+  .trademark-cards {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -801,13 +833,6 @@ body {
     flex-basis: 100%;
   }
 
-  .stamps-page {
-    flex-direction: column;
-  }
-
-  .stamps-page-cont {
-    padding: 0;
-  }
 }
 
 @media (max-width: 576px) {
