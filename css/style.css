@@ -459,8 +459,8 @@ body {
   grid-template-rows: auto 2fr;
   grid-column-gap: 3.125rem;
   grid-template-areas:
-    "logo title title"
-    "logo text text";
+    "logo title"
+    "logo text";
 }
 
 .trademark-card:hover {
