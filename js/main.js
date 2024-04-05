@@ -115,3 +115,25 @@ const swiper2 = new Swiper(".swiper2", {
     },
   },
 });
+
+//3//
+const swiperBlog = new Swiper(".blog-swiper", {
+  speed: 400,
+  autoHeight: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".blog-button-next",
+    prevEl: ".blog-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 2,
+    },
+  },
+});
