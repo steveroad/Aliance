@@ -907,6 +907,7 @@ body {
   height: 100%;
   background-color: rgba(41, 45, 51, 0.5);
   z-index: 10;
+  transition: opacity 0.2s;
 }
 
 .modal.is-open {
@@ -915,12 +916,18 @@ body {
   opacity: 1;
 }
 
+.modal.is-open .modal-dialog {
+  transform: translateY(0);
+}
+
 .modal-dialog {
   position: relative;
   margin: auto;
   max-width: 28.75rem;
   padding: 2.5rem 3.125rem;
   background-color: #FAFBFC;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
 }
 
 .modal-close {
@@ -968,6 +975,11 @@ body {
 .input:focus~.modal-input-label,
 .input:not(:placeholder-shown).input:not(:focus)~.modal-input-label {
   background-color: #FAFBFC;
+}
+
+.modal-button {
+  width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 1700px) {
