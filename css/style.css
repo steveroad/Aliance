@@ -97,6 +97,22 @@ body {
   background-color: #FAFBFC;
   color: #292D33;
   border-bottom: none;
+  /*height: 4.625rem;*/
+}
+
+.logo-svg_dark {
+  display: none;
+}
+
+.navbar-light .logo-svg_light {
+  display: none;
+}
+
+.navbar-light .logo-svg_dark {
+  display: block;
+}
+
+.navbar-scroll {
   height: 4.625rem;
 }
 
@@ -110,10 +126,6 @@ body {
 .navbar-logo .logo-svg {
   width: 8.75rem;
   height: 2.75rem;
-}
-
-.logo-svg_dark {
-  display: none;
 }
 
 /*light*/
@@ -254,6 +266,10 @@ body {
   margin-top: 6.25rem;
   color: #fff;
   list-style: none;
+}
+
+.header-features-ab {
+  color: #000;
 }
 
 .header-button {

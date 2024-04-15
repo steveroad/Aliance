@@ -8,17 +8,15 @@ const navbarbutton = document.querySelector(".navbar-button");
 const mMenuToogle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 
+const isFront = document.body.classList.contains("front-page");
+
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
-  logoDark.style.display = "block";
-  logoLight.style.display = "none";
   //logo.href.baseVal = "img/sprite.svg#logo_dark"; //+ .use в const logo
 };
 
 const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light");
-  logoDark.style.display = "none";
-  logoLight.style.display = "block";
   //logo.href.baseVal = "img/sprite.svg#logo_light";
 };
 
@@ -38,7 +36,7 @@ const closeMenu = (event) => {
   lightModeOff();
 };
 /////////
-window.addEventListener("scroll", () => {
+/*window.addEventListener("scroll", () => {
   if (this.scrollY > 1) {
     // this.scrollY > 1 ? lightModeOn() : lightModeOff();  // Аналог
     lightModeOn();
@@ -49,7 +47,7 @@ window.addEventListener("scroll", () => {
     navbarlogo.classList.remove("navbar-logo-light");
     navbarbutton.classList.remove("navbar-button-light");
   }
-});
+});*/
 
 mMenuToogle.addEventListener("click", (event) => {
   event.preventDefault();
@@ -168,5 +166,18 @@ document.addEventListener("click", (event) => {
 document.addEventListener("keyup", (event) => {
   if (event.key == "Escape" && modal.classList.contains("is-open")) {
     modal.classList.toggle("is-open");
+  }
+});
+
+/////////
+
+const changeNavHeight = (height) => {
+  navbar.style.height = height;
+};
+
+window.addEventListener("scroll", () => {
+  this.scrollY > 1 ? changeNavHeight("4.625rem") : changeNavHeight("5.875rem");
+  if (isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
   }
 });
