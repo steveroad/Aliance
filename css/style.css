@@ -130,7 +130,7 @@ body {
 
 /*light*/
 .navbar-logo-light {
-  padding: .9375rem 3.125rem;
+  /*padding: .9375rem 3.125rem;*/
   border-right: 1px solid rgb(235, 235, 240);
 }
 
@@ -221,13 +221,8 @@ body {
 
 .navbar-button {
   flex-shrink: 0;
-  height: 5.875rem;
+  height: 100%;
   transition: height 0.5s background-color 0.2s;
-}
-
-/*light*/
-.navbar-button-light {
-  height: 4.625rem;
 }
 
 .seporator {

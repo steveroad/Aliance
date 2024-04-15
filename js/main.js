@@ -12,11 +12,13 @@ const isFront = document.body.classList.contains("front-page");
 
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
+  navbarlogo.classList.add("navbar-logo-light");
   //logo.href.baseVal = "img/sprite.svg#logo_dark"; //+ .use в const logo
 };
 
 const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light");
+  navbarlogo.classList.remove("navbar-logo-light");
   //logo.href.baseVal = "img/sprite.svg#logo_light";
 };
 
@@ -180,4 +182,14 @@ window.addEventListener("scroll", () => {
   if (isFront) {
     this.scrollY > 1 ? lightModeOn() : lightModeOff();
   }
+});
+
+const changeNavPd = (padding) => {
+  navbarlogo.style.padding = padding;
+};
+
+window.addEventListener("scroll", () => {
+  this.scrollY > 1
+    ? changeNavPd(".9375rem 3.125rem")
+    : changeNavPd("1.5625rem 3.125rem");
 });
