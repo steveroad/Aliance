@@ -58,6 +58,10 @@ body {
   display: none;
 }
 
+.mobile-menu-toggle {
+  display: none;
+}
+
 .section {
   margin-bottom: 9.375rem;
 }
@@ -324,11 +328,17 @@ body {
 .slider-button-next {
   height: 100%;
   flex-basis: 50%;
+  fill: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #EBEBF033;
   cursor: pointer;
+}
+
+.slider-button-prev-ab,
+.slider-button-next-ab {
+  fill: #292D33;
 }
 
 .section-title {
@@ -1126,7 +1136,6 @@ body {
   .navbar-button {
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 5rem;
   }
 
   .slider-buttons {
@@ -1195,7 +1204,11 @@ body {
   }
 
   .navbar {
-    height: 68px;
+    height: 68px !important;
+  }
+
+  .navbar-light {
+    height: 68px !important;
   }
 
   .navbar-logo {
@@ -1211,7 +1224,6 @@ body {
   }
 
   .navbar-button {
-    height: 68px;
     padding: 0px 33px;
   }
 

@@ -193,3 +193,13 @@ window.addEventListener("scroll", () => {
     ? changeNavPd(".9375rem 3.125rem")
     : changeNavPd("1.5625rem 3.125rem");
 });
+
+/*const changeNavMb = (padding) => {
+  mMenuToogle.style.padding = padding;
+};
+
+window.addEventListener("scroll", () => {
+  this.scrollY > 1
+    ? changeNavMb("1.8rem 2.5rem")
+    : changeNavMb("2.2rem 2.5rem");
+});*/
