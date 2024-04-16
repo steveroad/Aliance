@@ -26,6 +26,13 @@ body {
   line-height: 1.6rem;
 }
 
+.-h1 {
+  font-family: "Bebas Neue Regular";
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
 .-h2 {
   font-family: "Bebas Neue Regular";
   max-width: 43.75rem;
@@ -991,6 +998,55 @@ body {
 .modal-button {
   width: 100%;
   margin-bottom: 1.5rem;
+}
+
+.single {
+  background-color: #F0F2F5;
+
+}
+
+.single-wrapper {
+  position: relative;
+  padding-top: 9rem;
+  padding-bottom: 3.125rem;
+}
+
+.single-title {
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.single-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: .625rem;
+}
+
+.single-list span {
+  background-color: #828A99;
+  height: 1px;
+  width: 14px;
+}
+
+.single-link {
+  text-decoration: none;
+  color: #828A99;
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.4rem;
+}
+
+.single-link-activ {
+  color: #292D33;
+}
+
+.single-logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @media (max-width: 1700px) {
