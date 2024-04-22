@@ -8,12 +8,12 @@
             интересующие вопросы и поможем даже в самых сложных случаях!</p>
           <div class="input-group-wrapper">
             <div class="input-group">
-              <input id="user-name" type="text" name="username" class="input" placeholder=" " autocomplete="off">
+              <input id="user-name" type="text" name="username" class="input" placeholder=" " autocomplete="off" maxlength="50" required>
               <label for="user-name" class="input-group-label -p">Имя</label>
             </div>
             <!-- /.input-group -->
             <div class="input-group">
-              <input id="user-phone" type="tel" name="userphone" class="input" placeholder=" " autocomplete="off">
+              <input id="user-phone" type="tel" name="userphone" class="input" placeholder=" " autocomplete="off" maxlength="12" required>
               <label for="user-phone" class="input-group-label -p">Номер телефона</label>
             </div>
             <!-- /.input-group -->
