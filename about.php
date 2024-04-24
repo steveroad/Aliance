@@ -129,7 +129,6 @@
   <section class="single">
     <div class="container">
       <div class="single-wrapper">
-        <div class="single-desc">
           <div class="seporator"></div>
           <h1 class="section-title -h1 single-title">о компании</h1>
           <ul class="single-list">
@@ -137,7 +136,6 @@
             <span></span>
             <li class="single-item"><a href="#" class="single-link single-link-activ">О компании</a></li>
           </ul>
-        </div>
         <!--<img src="img/single-logo.png" alt="#" class="single-logo">-->
       </div>
     </div>
