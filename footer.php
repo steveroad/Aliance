@@ -13,7 +13,7 @@
             </div>
             <!-- /.input-group -->
             <div class="input-group">
-              <input id="user-phone" type="tel" name="userphone" class="input" placeholder=" " autocomplete="off" required>
+              <input id="user-phone" type="tel" name="userphone" class="input phone-mask" placeholder=" " autocomplete="off" required>
               <label for="user-phone" class="input-group-label -p">Номер телефона</label>
             </div>
             <!-- /.input-group -->
@@ -159,7 +159,7 @@
           </div>
           <!-- /.input-group -->
           <div class="input-group">
-            <input id="modal-user-phone" type="tel" class="input modal-input" name="userphone" placeholder=" " autocomplete="off">
+            <input id="modal-user-phone" type="tel" class="input modal-input phone-mask" name="userphone" placeholder=" " autocomplete="off">
             <label for="modal-user-phone" class="input-group-label modal-input-label -p">Номер телефона</label>
           </div>
           <!-- /.input-group -->
