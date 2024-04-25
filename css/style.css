@@ -742,6 +742,20 @@ body {
   border: 1px solid #5C8EE5;
 }
 
+.input.is-invalid {
+  border: 1px solid #ff0000;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: -0.5rem;
+  right: 10px;
+  font-size: 10px;
+  line-height: 1rem;
+  padding: 0px 10px;
+  background-color: #F0F2F5;
+}
+
 .input:focus~.input-group-label,
 .input:not(:placeholder-shown).input:not(:focus)~.input-group-label {
   top: -0.5rem;

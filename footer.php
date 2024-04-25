@@ -8,12 +8,12 @@
             интересующие вопросы и поможем даже в самых сложных случаях!</p>
           <div class="input-group-wrapper">
             <div class="input-group">
-              <input id="user-name" type="text" name="username" class="input" placeholder=" " autocomplete="off" maxlength="50" required>
+              <input id="user-name" type="text" name="username" class="input" placeholder=" " autocomplete="off" required>
               <label for="user-name" class="input-group-label -p">Имя</label>
             </div>
             <!-- /.input-group -->
             <div class="input-group">
-              <input id="user-phone" type="tel" name="userphone" class="input" placeholder=" " autocomplete="off" maxlength="12" required>
+              <input id="user-phone" type="tel" name="userphone" class="input" placeholder=" " autocomplete="off" required>
               <label for="user-phone" class="input-group-label -p">Номер телефона</label>
             </div>
             <!-- /.input-group -->
@@ -151,15 +151,15 @@
       <p class="modal-text -p">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все
         интересующие
         вопросы и поможем даже в самых сложных случаях!</p>
-      <form action="#" class="modal-form">
+      <form action="handler.php" method="POST" class="modal-form">
         <div class="input-group-wrapper input-group-vertical">
           <div class="input-group">
-            <input id="modal-user-name" type="text" class="input modal-input" placeholder=" " autocomplete="off">
+            <input id="modal-user-name" type="text" class="input modal-input" name="username" placeholder=" " autocomplete="off">
             <label for="modal-user-name" class="input-group-label modal-input-label -p">Имя</label>
           </div>
           <!-- /.input-group -->
           <div class="input-group">
-            <input id="modal-user-phone" type="tel" class="input modal-input" placeholder=" " autocomplete="off">
+            <input id="modal-user-phone" type="tel" class="input modal-input" name="userphone" placeholder=" " autocomplete="off">
             <label for="modal-user-phone" class="input-group-label modal-input-label -p">Номер телефона</label>
           </div>
           <!-- /.input-group -->
@@ -183,4 +183,5 @@
   </div>
   <!-- /.modal -->
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/just-validate.production.min.js"></script>
   <script src="js/main.js"></script>

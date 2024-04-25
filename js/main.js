@@ -194,12 +194,45 @@ window.addEventListener("scroll", () => {
     : changeNavPd("1.5625rem 3.125rem");
 });
 
-/*const changeNavMb = (padding) => {
-  mMenuToogle.style.padding = padding;
-};
-
-window.addEventListener("scroll", () => {
-  this.scrollY > 1
-    ? changeNavMb("1.8rem 2.5rem")
-    : changeNavMb("2.2rem 2.5rem");
-});*/
+const forms = document.querySelectorAll("form"); //Собираем все формы
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
+  });
+  validation
+    .addField("[name=username]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите имя",
+      },
+      {
+        rule: "maxLength",
+        value: 50,
+        errorMessage: "Максимально 50 символов",
+      },
+    ])
+    .addField("[name=userphone]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите номер телефона",
+      },
+    ])
+    .onSuccess((event) => {
+      const thisForm = event.target; // Наша форма
+      const formData = new FormData(thisForm); // Данные из нашей формы
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+            alert("Форма отправлена! 😊");
+          } else {
+            alert("Ошибка. Текст ошибки: ".response.statusText);
+          }
+        });
+      };
+      ajaxSend(formData);
+    });
+});
