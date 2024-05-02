@@ -426,6 +426,11 @@ body {
   cursor: pointer;
 }
 
+.blog-button-prev,
+.blog-button-next svg {
+  fill: #fff;
+}
+
 .steps-buttons {
   display: none;
 }
@@ -1022,6 +1027,13 @@ body {
 .modal-button {
   width: 100%;
   margin-bottom: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.alert-modal {
+  width: 22.5rem;
+  height: 19.375rem;
 }
 
 .single {

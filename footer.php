@@ -139,11 +139,10 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
-
-  <div class="modal">
+  <div class="modal" id="feedback-modal">
     <div class="modal-dialog">
       <h2 class="modal-title">Есть вопросы?</h2>
-      <a href="" class="modal-close" data-toggle="modal">
+      <a href="" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
         <svg class="modal-close-svg">
           <use xlink:href="img/sprite.svg#close"></use>
         </svg>
@@ -178,6 +177,23 @@
         <!-- /.modal-form-footer -->
       </form>
       <!-- /.modal-form -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+  <div class="modal" id="alert-modal">
+    <div class="modal-dialog">
+    <svg class="alert-modal-svg">
+          <use xlink:href="img/sprite.svg#thanks"></use>
+        </svg>
+      <h2 class="modal-title">Спасибо за заявку!</h2>
+      <a href="" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+        <svg class="modal-close-svg">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </a>
+      <p class="modal-text -p">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+      <a href="./" class="button modal-button">Вернуться на главную</a>
     </div>
     <!-- /.modal-dialog -->
   </div>

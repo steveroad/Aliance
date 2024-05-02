@@ -115,7 +115,7 @@
       <a href="tel:+74996861014" class="navbar-phone-link -bold">+7 (499) 686-10-14</a>
     </div>
     <!-- /.navbar-phone -->
-    <button class="navbar-button button -bold" data-toggle="modal">
+    <button class="navbar-button button -bold" data-toggle="modal" data-target="#feedback-modal">
       <svg class="button-icon">
         <use xlink:href="img/sprite.svg#phone"></use>
       </svg>
@@ -135,7 +135,7 @@
         <p class="header-text -p">Высокий уровень вовлечения представителей целевой аудитории является четким
           доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от анализа
           существующих паттернов поведения.</p>
-        <div class="header-button button -bold" data-toggle="modal">Подробнее о компании</div>
+        <div class="header-button button -bold" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</div>
       </div>
       <!-- /.header-content -->
 
