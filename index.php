@@ -18,7 +18,7 @@
   <div class="mobile-menu">
     <ul class="mobile-menu-nav">
       <li class="mobile-menu-item"><a class="mobile-menu-link -bold_mob" href="/about.php">О компании</a></li>
-      <li class="mobile-menu-item"><a class="mobile-menu-link -bold_mob" href="">Контрактное производство</a>
+      <li class="mobile-menu-item"><a class="mobile-menu-link -bold_mob" href="/contracts.php">Контрактное производство</a>
         <ul class="mobile-submenu">
           <li class="mobile-submenu-item">
             <a class="mobile-submenu-link -p_mob" href="#">Автомобильная химия</a>
@@ -102,9 +102,9 @@
 
     <ul class="navbar-nav">
       <li class="navbar-nav-item"><a class="navbar-nav-link -p" href="/about.php">О компании</a></li>
-      <li class="navbar-nav-item"><a class="navbar-nav-link -p" href="">Контрактное производство</a></li>
-      <li class="navbar-nav-item"><a class="navbar-nav-link -p" href="">Собственные торговые марки</a></li>
-      <li class="navbar-nav-item"><a class="navbar-nav-link -p" href="">Новости</a></li>
+      <li class="navbar-nav-item"><a class="navbar-nav-link -p" href="/contracts.php">Контрактное производство</a></li>
+      <li class="navbar-nav-item"><a class="navbar-nav-link -p" href="/mark.php">Собственные торговые марки</a></li>
+      <li class="navbar-nav-item"><a class="navbar-nav-link -p" href="/news.php">Новости</a></li>
       <li class="navbar-nav-item"><a class="navbar-nav-link -p" href="">Контакты</a></li>
     </ul>
 
@@ -375,34 +375,7 @@
   </section>
   <!-- /.section production -->
 
-  <section class="section trademark">
-    <div class="container">
-      <div class="seporator"></div>
-      <h2 class="section-title -h2">собственные торговые марки</h2>
-      <div class="trademark-cards">
-        <div class="trademark-card">
-          <svg class="trademark-card-logo ag_tech">
-            <use xlink:href="img/sprite.svg#ag_tech"></use>
-          </svg>
-          <h3 class="trademark-card-title -h3">Автохимия AG-Tech</h3>
-          <p class="trademark-card-text -p">Для современного мира разбавленное изрядной долей эмпатии,
-            рациональное
-            мышление создаёт предпосылки для поставленных обществом задач.</p>
-        </div>
-
-        <div class="trademark-card">
-          <svg class="trademark-card-logo al_p">
-            <use xlink:href="img/sprite.svg#al_p"></use>
-          </svg>
-          <h3 class="trademark-card-title -h3">Автохимия AP</h3>
-          <p class="trademark-card-text -p">Для современного мира разбавленное изрядной долей эмпатии,
-            рациональное
-            мышление создаёт предпосылки для поставленных обществом задач.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /.section trademark -->
+  <?php $block_title ="Собственные торговые марки"; include_once('./template/trademarks_block.php')?>
 
   <section class="section founder">
     <img src="img/founder.jpg" alt="founder" class="founder-photo">

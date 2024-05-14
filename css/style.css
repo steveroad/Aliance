@@ -1038,8 +1038,32 @@ body {
 
 .single {
   background-color: #F0F2F5;
-
 }
+
+.single-bg {
+  position: relative;
+  background-image: url(../img/bg-head.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  color: #fff;
+}
+
+.single-text {
+  color: #fff;
+}
+
+.single-bg::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(41, 45, 51, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 
 .single-wrapper {
   position: relative;
@@ -1083,6 +1107,10 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.single-text {
+  color: #fff;
 }
 
 @media (max-width: 1700px) {
